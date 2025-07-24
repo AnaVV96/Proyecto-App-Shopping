@@ -1,0 +1,16 @@
+<div class="card">
+    <h2>Juego favorito</h2>
+
+        <input type="text" pInputText [(ngModel)]="favGame" placeholder="Escribe el nombre del juego" />
+        <button (click)="onClick()">click</button>
+
+    <div class="info">
+        <p><strong>Género: </strong> Aventura</p>
+        <p><strong>Fceha: </strong> 2017</p>
+    </div>
+    <p *ngIf="favGame">Tu juego favorito es: {{ favGame }}</p>
+
+
+
+</div>
+

@@ -1,0 +1,50 @@
+<div>
+
+    <p-button class="boton-1" label="Enviar" />
+</div>
+<div>
+    <button pButton class="boton3">
+        <i class="pi pi-check" pButtonIcon></i>
+        <span pButtonLabel>Save</span>
+    </button>
+</div>
+
+<div>
+    <p-button label="Link" link />
+    <a href="https://angular.dev/" pButton target="_blank" rel="noopener noreferrer">
+        <span pButtonLabel>Angular Website</span>
+    </a>
+    <a routerLink="/" pButton>
+        <span pButtonLabel>Router Link</span>
+    </a>
+</div>
+
+<a href="https://angular.dev/" pButton class="boton3" target="_blank" rel="noopener noreferrer">
+    <span pButtonLabel>Angular Website</span>
+</a>
+
+<div>
+    <p-button label="Search" icon="pi pi-check" [loading]="loading" (onClick)="load()" />
+</div>
+
+<div>
+     <p-button label="Danger" [rounded]="true" severity="danger" />
+</div>
+
+<div class="card flex flex-wrap gap-4 justify-center">
+    <p-button label="Primary" [rounded]="true" />
+    <p-button label="Secondary" [rounded]="true" severity="secondary" />
+    <p-button label="Success" [rounded]="true" severity="success" />
+    <p-button label="Info" [rounded]="true" severity="info" />
+    <p-button label="Warn" [rounded]="true" severity="warn" />
+    <p-button label="Help" [rounded]="true" severity="help" />
+    <p-button label="Danger" [rounded]="true" severity="danger" />
+    <p-button label="Contrast" [rounded]="true" severity="contrast" />
+</div>
+
+<button pButton type="button" label="Guardar" icon="pi pi-save" class="p-button-success"></button>
+
+<div class="card flex justify-center">
+    <p-toast />
+    <p-button (onClick)="show()" label="Show" />
+</div>

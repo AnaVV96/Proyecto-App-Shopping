@@ -1,0 +1,30 @@
+
+
+.boton-1 {
+    background-color: #fff;
+    font-family: sans-serif;
+    color: #000;
+    padding: 4px 8px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+.boton-1:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.boton-1:active {
+    background-color: rgb(211, 210, 210);
+}
+
+.boton3{
+  background-color: #ff69b4; /* rosa fuerte */
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

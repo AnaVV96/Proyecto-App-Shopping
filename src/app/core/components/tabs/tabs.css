@@ -1,0 +1,47 @@
+#container {
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 32px;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #D2D3D3;
+
+}
+
+.tab {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+    transition: 200ms ease-in-out;
+}
+
+svg {
+    transition: 20ms ease-in-out;
+}
+
+.buscador {
+    border-radius: 100px;
+    background: var(--Primary-Y500, #F9D262);
+    display: flex;
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.tab p {
+    margin: 5px 0 0;
+}
+
+p{
+    color: #8E9090;
+}
+
+.tab.seleccionado p {
+  color: #1F2223;
+}
