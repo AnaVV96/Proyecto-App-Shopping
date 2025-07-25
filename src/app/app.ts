@@ -7,12 +7,13 @@ import { Boton } from './boton/boton';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { Tabs } from "./core/components/tabs/tabs";
+import { Header } from "./core/components/header/header";
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, RouterOutlet, InputTextModule, InputTextModule, FavoriteGame, Boton, TableModule, ButtonModule, RouterLink, Tabs],
+  imports: [FormsModule, RouterOutlet, InputTextModule, InputTextModule, FavoriteGame, Boton, TableModule, ButtonModule, RouterLink, Tabs, Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

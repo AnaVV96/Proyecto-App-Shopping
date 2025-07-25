@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,inject } from '@angular/core';
+import { HeaderService } from '../../core/services/header.service';
 
 @Component({
   selector: 'app-wishlist',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './wishlist.css'
 })
 export class Wishlist {
+  headerservice = inject(HeaderService);
+
+  ngOnInit(): void {
+    this.headerservice.titulo.set("Me gusta")
+  }
 
 }

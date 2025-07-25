@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { HeaderService } from '../../core/services/header.service';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,17 @@ import { Component } from '@angular/core';
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home {
+export class Home implements OnInit, OnDestroy {
+
+  headerservice = inject(HeaderService);
+
+  ngOnInit(): void {
+    this.headerservice.titulo.set("Inicio")
+    this.headerservice.conbordes.set(true)
+  }
+
+  ngOnDestroy(): void {
+    this.headerservice.conbordes.set(false)
+  }
 
 }
