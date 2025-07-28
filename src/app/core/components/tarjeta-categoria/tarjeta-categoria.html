@@ -1,0 +1,9 @@
+<div class="tarjeta" [style.background-color]="categoria.color">
+  <h4>{{ categoria.nombre }}</h4>
+  <img [src]="categoria.fotoUrl" [alt]="categoria.nombre">
+  <app-button
+  label=""
+  color="primary"
+  (clicked)="onSave()"
+></app-button>
+</div>

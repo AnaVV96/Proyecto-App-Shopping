@@ -1,0 +1,46 @@
+[
+    {
+        "id":1,
+        "nombre": "Juegos",
+        "fotoUrl": "assets/img/Productos/Electrónica/04.png",
+        "color": "var(--Accent-Red-R500, #EA8389)",
+        "productos": []
+
+    },
+    {
+        "id":2,
+        "nombre": "Moda",
+        "fotoUrl": "assets/img/Productos/Moda/01.png",
+        "color": "var(--Primary-Y500, #F9D262)",
+        "productos": []
+
+    },
+    {
+        "id":3,
+        "nombre": "Música",
+        "fotoUrl": "assets/img/Productos/Música/04.png",
+        "color": "var(--Accent-Purple-P500, #DEAAEF)",
+        "productos": []
+
+    },
+    {
+        "id":4,
+        "nombre": "Libros",
+        "fotoUrl": "assets/img/Productos/Libros/04.png",
+        "color": "var(--Accent-Green-G500, #B4D479)",
+        "productos": [
+            {
+                "id": "1",
+                "nombre": "El Hobbit",
+                "precio": "14,99€",
+                "esMúsica": false,
+                "esModa": false,
+                "tipo": ["Libro de aventuras", "bestseller"],
+                "fotoUrl": "assets/img/Productos/Libros/02.png"
+
+            }
+        ]
+
+    }
+    
+]

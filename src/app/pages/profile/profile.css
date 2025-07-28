@@ -1,0 +1,43 @@
+
+
+.intereses-container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 21px;
+
+}
+
+.titulo-intereses {
+    color: var(--Neutral-N800, #363939);
+    font-family: Lora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+a {
+    color: var(--Color-Text-Color-text-link, #797A7B);
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.categorias-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-auto-rows: 200px;  
+  gap: 16px; 
+  padding: 0 21px;
+}
+
