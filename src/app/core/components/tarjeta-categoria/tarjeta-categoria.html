@@ -1,9 +1,27 @@
 <div class="tarjeta" [style.background-color]="categoria.color">
   <h4>{{ categoria.nombre }}</h4>
   <img [src]="categoria.fotoUrl" [alt]="categoria.nombre">
-  <app-button
+  <!-- <app-button
   label=""
-  color="primary"
+  color="tertiary"
+  [iconOnly]="true"
   (clicked)="onSave()"
-></app-button>
+  level="primary"
+  icon="angle-right"
+  size="small"
+  
+  ></app-button> -->
+  <div class="tarjeta-footer">
+    <app-button
+      icon="chevron-right" 
+      [iconOnly]="true" 
+      level="primary" 
+      color="primary" 
+      size="large"
+      iconColor="#363939"
+      class="custom-white-btn">
+      
+    </app-button>
+
+  </div>
 </div>

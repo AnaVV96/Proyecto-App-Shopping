@@ -1,9 +1,22 @@
+<!-- Mirar como se renderiza el boton y meter level y size para acceder a esos atributos en css
+[attr.atributo]="" para añadir un atributo que no tenga el componente y se renderice por html 
+-->
 <button
-  [type]="type"
+  [attr.mode]="type"
   [disabled]="disabled"
   (click)="onClick()"
-  class="btn"
-  [ngClass]="color"
+  [attr.size]="size"
+  [attr.level]="level"
+  
+  [ngClass]="['btn', 'background-color-' + color, iconOnly ? 'icon-only' : '']"
 >
-  {{ label }}
+  <i *ngIf="icon" class="pi pi-{{icon}}" [style.color]="iconColor"></i>
+  <span *ngIf="!iconOnly">{{ label }}</span>
+
+<!-- cargar icono SI existe
+ normalmente se cargan con <i> / <span> y se cargan con class="pi pi-{{icon}}" -->
+
 </button>
+
+
+
