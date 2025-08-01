@@ -5,10 +5,11 @@ import { categoria } from '../../core/interfaces/categorias';
 import { TarjetaCategoria } from '../../core/components/tarjeta-categoria/tarjeta-categoria';
 import { CommonModule } from '@angular/common'; 
 import { NgFor } from '@angular/common';
+import { CardAccountCategory } from '../../core/components/card-account-category/card-account-category';
 
 @Component({
   selector: 'app-profile',
-  imports: [CommonModule, TarjetaCategoria, NgFor],
+  imports: [CommonModule, TarjetaCategoria, NgFor, CardAccountCategory],
   templateUrl: './profile.html',
   styleUrl: './profile.css',
   standalone: true,

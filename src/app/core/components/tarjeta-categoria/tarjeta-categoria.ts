@@ -11,13 +11,10 @@ import { Button } from '../button/button';
   standalone: true,
 })
 export class TarjetaCategoria {
-  @Input({ required: true }) categoria!: categoria;
+  @Input({ required: true }) categoria!: Partial<categoria>;
 
-    ngOnInit() {
-    console.log("Tarjeta recibió:", this.categoria);
-  }
-
-  onSave() {
-  alert('Guardado correctamente 🚀');
+  
+constructor() {
+  this.categoria = { nombre: '', fotoUrl: '', color: '#ffffff' } as Partial<categoria>;
 }
 }
